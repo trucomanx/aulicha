@@ -1,0 +1,90 @@
+<html>
+<head>
+	<title> ..::  Aulicha  ::..</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+  	<link href="data/base.css" media="screen" rel="stylesheet" type="text/css">
+	 <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script type="text/javascript">
+
+	if(navigator.appName=='Microsoft Internet Explorer')
+	{
+		var str1=	'El navegador que usas no respeta los estándares\n'+
+				'de diseño web, muy probablemente estás usando\n'+
+				'Internet Explorer, por favor descarga un navegador\n'+
+				'web adecuado, como:\n'+
+				'Firefox, Chromium, Opera, etc.'
+		alert(str1);
+	}
+    </script>
+
+    <script src="data/jquery-3.4.1.min.js"></script> 
+
+    <script> 
+    $(function(){
+      $("#includedHeadContent").load("head.html"); 
+    });
+    </script> 
+
+    <script> 
+    $(function(){
+      $("#includedFootContent").load("foot.html"); 
+    });
+    </script> 
+
+</head>
+<body>
+
+<!----------------------------------------------------------------------------->
+	<div class="header gradient">
+        <div id="includedHeadContent" class="top-nav darkblock"> </div>
+
+        <img src="img/logo.svg.png" height="64"> <br>
+	</div>
+<!----------------------------------------------------------------------------->
+<br>
+<!----------------------------------------------------------------------------->
+	<div class="header gradient">
+		<div class="promo-area"> 
+            <div style="float: left; width: 20.0%;">
+                <center><img  src="img/Gnulinux.png" style="width: 90.0%;"  border="0" /></center>
+            </div>
+            <div style="float: right;width: 80.0%;">
+			<h2>GNU-Linux: Verificar a integridade e autenticidade do livro</h2>
+        	    <p>Baixe o arquivo <a href="https://drive.google.com/file/d/1ag9Wzfdx5ghGzFVCXE1KlmijX7gIptED/view?usp=drivesdk">GnuPG-Verificador.sig 
+                <img  src="imagenes/go-jump.png" style="width: 1em;margin-right: 0;"  border="0" /></a>,
+                de modo que este arquivo esteja na mesma pasta que o livro 
+                <b>Aulicha: crônicas nos Andes</b>, em formato PDF.
+                Logo, entre no terminal e se posicione nessa pasta;
+                neste ponto você pode usar o programa <b>gpg</b> para verificar a 
+                integridade do arquivo do livro em formato PDF.</p>
+                <p> Por exemplo, se o arquivo do livro tem o nome <b>Aulicha-1raEd-Fernando-PR.pdf</b>,
+                então podemos verificar este utilizando o seguinte comando:</p> 
+<pre>
+
+ gpg --verify GnuPG-Verificador.sig Aulicha-1raEd-Fernando-PR.pdf
+
+</pre>
+<hr/>
+                <p>Se o arquivo foi verificado com êxito, poderá observar uma mensagem similar a esta:</p> 
+<pre>
+
+ gpg: Assinatura correta de "Fernando Pujaico Rivera (TrucomanX) <fernando.pujaico.rivera@gmail.com>" [final]
+
+</pre>
+<hr/>
+                <p>No caso contrário, observará algo similar a isto:</p> 
+<pre>
+
+ gpg: Assinatura ERRADA de "Fernando Pujaico Rivera (TrucomanX) <fernando.pujaico.rivera@gmail.com>" [final]
+
+</pre>
+            </div>
+
+		</div>
+	</div>
+
+<!----------------------------------------------------------------------------->
+    <div id="includedFootContent" class="content">    </div>
+
+</body>
+</html>

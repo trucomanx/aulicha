@@ -1,0 +1,181 @@
+<html>
+<head>
+    <title> ..:: Aulicha ::..</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <link href="data/base.css" media="screen" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script type="text/javascript">
+
+    if(navigator.appName=='Microsoft Internet Explorer')
+    {
+        var str1=    'El navegador que usas no respeta los estándares\n'+
+                'de diseño web, muy probablemente estés usando\n'+
+                'Internet Explorer, por favor descarga un navegador\n'+
+                'web adecuado, como:\n'+
+                'Firefox, Chromium, Opera, etc.'
+        alert(str1);
+    }
+    </script>
+
+
+    <!--  <script src="jquery-rss-gh-pages/lib/jquery-1.6.4.min.js"></script>   -->
+    <script src="data/jquery-3.4.1.min.js"></script> 
+    <script src="data/jquery.rss-4.3.0.min.js"></script>
+    <script>
+    jQuery(function($) {
+      $("#rss-feeds").rss("https://trucomanx.wordpress.com/rss",
+      {
+        limit: 4,
+        dateFormat: 'YYYY-MM-DD',
+        entryTemplate:'<li>{date}:<a href="{url}"> {title}</a><br/>{shortBodyPlain}</li>'
+      })
+    })
+    </script>
+
+
+    <script> 
+    $(function(){
+      $("#includedHeadContent").load("head.html"); 
+    });
+    </script> 
+
+    <script> 
+    $(function(){
+      $("#includedFootContent").load("foot.html"); 
+    });
+    </script> 
+
+</head>
+<body>
+
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+    <div class="header gradient">
+        <div id="includedHeadContent" class="top-nav darkblock"> </div>
+
+        <img src="img/logo.svg.png" height="64"> <br>
+
+        <div class="promo-area"> 
+            <center>
+            <div class="button"style="width: 65.0%;">
+                <div style="float: left; width: 50.0%;">
+                    <center><img  src="img/cover-tiny-2.png" width="90%"  border="0" /></center>
+                </div>
+                <div style="float: right; width: 50.0%;">
+                    <h1>Aulicha: crônicas nos Andes</h1>
+                    <p>
+Nesta obra 
+o leitor conhecerá um conjunto de histórias acontecidas na cordilheira dos Andes no Peru, 
+estas mostram algumas vivências do então criança Aurelio Pujaico Osccorima (1956), 
+ayacuchano de nascimento;
+agora conhecido como Don Aurelio.
+
+Mediante suas palavras e seu particular olhar,
+poderemos entrar na vida e pequenas aventuras dos moradores da serra; conhecendo assim, 
+seus problemas, suas alegrias e os ensinamentos que a vida lhes proporciona.
+					</p> 
+
+                    <p>Você pode descarregar uma versão gratuita do livro aqui:</p>
+                        <a href="https://drive.google.com/file/d/1jUOMNz0Y1_Xa9LpMKD5EHZrFYQ-2DAqj/view?usp=drivesdk">
+                        <img  src="img/download-pdf.png" width=128  border="0" />
+                        </a>
+                </div>
+            </div>
+            </center>
+            <br>
+        </div>
+    </div>
+<!----------------------------------------------------------------------------->
+<p></p>
+<!----------------------------------------------------------------------------->
+<center>
+    <div class="contentinline gradient2">
+        <div class="promo-area"> 
+            <div style="float: left">
+                <a href="verificar.html">
+                <img src="img/gpg.png" height="180em" style="float: left; margin-right: 2em;" >
+                </a>
+            </div>
+            <div style="margin: 1em;">
+                <br>
+                <a href="verificar.html">
+                <p><h3>Verifica</h3></p>
+                </a>
+                <p><b>a integridade e autenticidade da versão em PDF do livro.</b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contentinline gradient2">
+        <div class="promo-area"> 
+            <div style="float: left">
+                <a href="comprar-impresso.html">
+                <img src="img/books.svg.png" height="180em" style="float: left; margin-right: 2em;" >
+                </a>
+            </div>
+            <div style="margin: 1em;">
+                <br>
+                <a href="comprar-impresso.html">
+                <p><h3>Apoie nosso projeto</h3></p>
+                </a>
+                <p><b>comprando uma versão impressa do livro.</b></p>
+            </div>
+            
+        </div>
+    </div>
+       
+    <div class="contentinline gradient2">
+        <div class="promo-area"> 
+            <div style="float: left">
+                <a href="comprar-digital.html">
+                <img src="img/pdf.svg.png" height="180em" style="float: left; margin-right: 2em;" >
+                </a>
+            </div>
+            <div style="margin: 1em;">
+                <br>
+                <a href="comprar-digital.html">
+                <p><h3>Apoie nosso projeto</h3></p>
+                </a>
+                <p><b>comprando uma versão digital (PDF) do livro.</b></p>
+            </div>
+        </div>
+    </div>
+</center>
+
+<!----------------------------------------------------------------------------->
+<p></p>
+<!----------------------------------------------------------------------------->
+    <div class="header gradient">
+        <div class="promo-area"> 
+            <div>
+                <div style="float: left; width: 60.0%;">
+                    <div style="float: left"><h2>Lista de capítulos:</h2></div>
+                    <div class="contentinlineX" style="float: left; width: 100.0%;">
+                        <ul>
+                            <li>Introdução.</li>
+                            <li>Parte 1.</li>
+                            <ul>
+								<li>Zorra</li>
+								<li>Zandor</li>
+							</ul>
+                        </ul>
+                    </div>
+                </div>
+                <div style="float: right; width: 35.0%;">
+                    <div style="float: left"><h2>Notícias do blog:</h2></div>
+                    <div class="darkblock button" style="width: 100.0%;">
+                        <div id="rss-feeds"></div>
+                    </div>            
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<!----------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------->
+    <div id="includedFootContent" class="content">    </div>
+
+</body>
+</html>
