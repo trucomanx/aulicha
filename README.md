@@ -1,8 +1,8 @@
 
 # Sitio web do livro
 
-Métodos numéricos: Problemas não lineares e inversos. 
+Aulicha: crônicas nos Andes. 
 
-https://trucomanx.github.io/metodos.numericos/
+https://trucomanx.github.io/aulicha/
 
 
