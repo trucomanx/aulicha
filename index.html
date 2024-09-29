@@ -1,174 +1,86 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title> ..:: Aulicha ::..</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-      <link href="data/base.css" media="screen" rel="stylesheet" type="text/css">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-
-    <!--  <script src="jquery-rss-gh-pages/lib/jquery-1.6.4.min.js"></script>   -->
-    <script src="data/jquery-3.7.1.min.js"></script> 
-    <script src="data/jquery.rss-4.3.0.min.js"></script>
-    <script>
-    jQuery(function($) {
-      $("#rss-feeds").rss("https://trucomanx.wordpress.com/rss",
-      {
-        limit: 2,
-        dateFormat: 'YYYY-MM-DD',
-        entryTemplate:'<li>{date}:<a href="{url}"> {title}</a><br/>{shortBodyPlain}</li>'
-      })
-    })
-    </script>
-
-
-    <script> 
-    $(function(){
-      $("#includedHeadContent").load("head.html"); 
-    });
-    </script> 
-
-    <script> 
-    $(function(){
-      $("#includedFootContent").load("foot.html"); 
-    });
-    </script> 
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aulicha - Escolha seu idioma</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f4f4f9;
+      color: #333;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .book-cover {
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 10px 0;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 40px;
+      color: #555;
+    }
+    .language-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
 
-<!----------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------->
-    <div class="header gradient">
-        <div id="includedHeadContent" class="top-nav darkblock"> </div>
+  <div class="container">
+    <!-- Imagem da capa do livro -->
+    <img src="img/cover-tiny-2.png" alt="Capa do livro Aulicha" class="book-cover">
 
-        <img src="img/logo.svg.png" height="64"> <br>
+    <!-- Título e subtítulo do livro -->
+    <h1>Aulicha</h1>
+    <h2>Crônicas nos Andes</h2>
 
-        <div class="promo-area"> 
-            <center>
-            <div class="button"style="width: 65.0%;">
-                <div style="float: left; width: 50.0%;">
-                    <center><img  src="img/cover-tiny-2.png" width="90%"  border="0" /></center>
-                </div>
-                <div style="float: right; width: 50.0%;">
-                    <h1>Aulicha: crônicas nos Andes</h1>
-                    <p>
-Nesta obra 
-o leitor conhecerá um conjunto de histórias acontecidas na Cordilheira dos Andes do Peru. 
-Elas mostram algumas vivências do meu pai, Aurelio (1956), quando era apenas uma criança.
-
-Mediante suas palavras e seu particular olhar, 
-poderemos entrar na vida e nas pequenas aventuras dos moradores da serra; conhecendo, assim, 
-seus problemas, suas alegrias e os ensinamentos que a vida lhes proporciona. 
-		    </p> 
-
-<p>Você pode descarregar uma versão gratuita do livro aqui:</p>
-<div style="float: right; width: 50.0%;">
-<a href="https://drive.google.com/file/d/13QZyq75cFbgzXXr1btWVWpL8NT_qBceW/view?usp=sharing">
-<img  src="img/download-ptbr.png" style="width: 60.0%;"  border="0" />
-</a>
-</div>
-<div style="float: right; width: 50.0%;">
-<a href="https://drive.google.com/file/d/1OWuIyGEHgD7sW0GZWgdanwlDLkqAc-Vw/view?usp=sharing">
-<img  src="img/download-es.png" style="width: 60.0%;"  border="0" />
-</a>
-</div>
-                </div>
-            </div>
-            </center>
-            <br>
-        </div>
-    </div>
-<!----------------------------------------------------------------------------->
-<p></p>
-<!----------------------------------------------------------------------------->
-<center>
-    <div class="contentinline gradient2">
-        <div class="promo-area"> 
-            <div style="float: left">
-                <a href="verificar.html">
-                <img src="img/gpg.png" height="180em" style="float: left; margin-right: 2em;" >
-                </a>
-            </div>
-            <div style="margin: 1em;">
-                <br>
-                <a href="verificar.html">
-                <p><h3>Verifica</h3></p>
-                </a>
-                <p><b>a integridade e autenticidade da versão em PDF do livro.</b></p>
-            </div>
-        </div>
+    <!-- Botões de seleção de idioma -->
+    <div class="language-buttons">
+      <button onclick="window.location.href='pt/index.html'">Português</button>
+      <button onclick="window.location.href='es/index.html'">Español</button>
+      <button onclick="window.location.href='en/index.html'">English</button>
     </div>
 
-    <div class="contentinline gradient2">
-        <div class="promo-area"> 
-            <div style="float: left">
-                <a href="comprar-impresso.html">
-                <img src="img/books.svg.png" height="180em" style="float: left; margin-right: 2em;" >
-                </a>
-            </div>
-            <div style="margin: 1em;">
-                <br>
-                <a href="comprar-impresso.html">
-                <p><h3>Apoie nosso projeto</h3></p>
-                </a>
-                <p><b>comprando uma versão impressa do livro.</b></p>
-            </div>
-            
-        </div>
-    </div>
-       
-    <div class="contentinline gradient2">
-        <div class="promo-area"> 
-            <div style="float: left">
-                <a href="comprar-digital.html">
-                <img src="img/pdf.svg.png" height="180em" style="float: left; margin-right: 2em;" >
-                </a>
-            </div>
-            <div style="margin: 1em;">
-                <br>
-                <a href="comprar-digital.html">
-                <p><h3>Apoie nossa pesquisa</h3></p>
-                </a>
-                <p><b>comprando uma versão digital (PDF) do livro.</b></p>
-            </div>
-        </div>
-    </div>
-</center>
-
-<!----------------------------------------------------------------------------->
-<p></p>
-<!----------------------------------------------------------------------------->
-    <div class="header gradient">
-        <div class="promo-area"> 
-            <div>
-                <div style="float: left; width: 60.0%;">
-                    <div style="float: left"><h2>Lista de capítulos:</h2></div>
-                    <div class="contentinlineX" style="float: left; width: 100.0%;">
-                        <ul>
-                            <li>Introdução.</li>
-                            <li>Parte 1.</li>
-                            <ul>
-								<li>Zorra</li>
-								<li>Zandor</li>
-							</ul>
-                        </ul>
-                    </div>
-                </div>
-                <div style="float: right; width: 35.0%;">
-                    <div style="float: left"><h2>Notícias do blog:</h2></div>
-                    <div class="darkblock button" style="width: 100.0%;">
-                        <div id="rss-feeds"></div>
-                    </div>            
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-<!----------------------------------------------------------------------------->
-
-<!----------------------------------------------------------------------------->
-    <div id="includedFootContent" class="content">    </div>
+    <!-- Rodapé com uma mensagem -->
+    <footer>
+      <p>Escolha seu idioma para continuar explorando o mundo de Aulicha</p>
+    </footer>
+  </div>
 
 </body>
 </html>
+
